@@ -7,6 +7,10 @@ extends CharacterBody2D
 var direction: Vector2 = Vector2.ZERO
 var is_grounded: bool = false
 
+func _ready():
+	print("Player _ready() called")
+	print("Player position: ", position)
+
 func _physics_process(delta: float):
 	_get_input()
 	_apply_gravity(delta)
