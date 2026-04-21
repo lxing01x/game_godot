@@ -11,7 +11,7 @@ func _on_start_button_pressed():
 	print("Start button pressed")
 	title_screen.visible = false
 	
-	var level_path: String = "res://scenes/level_1.tscn"
+	var level_path: String = "res://scenes/level_simple.tscn"
 	print("Attempting to load scene: ", level_path)
 	
 	if ResourceLoader.exists(level_path):
